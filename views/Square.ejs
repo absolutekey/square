@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+  </head>
+  <body>
+    
+    
+    <div class = "hai" >
+      <button class="BtnCT btn btn-5" id="x"><%= x %></button>
+      <button class="BtnCT btn btn-5" id="r" onclick="location.reload();">Reset</button>
+      <button class="BtnCT btn btn-5" id="b" onclick="addX('<%= x %>')">Black</button>
+      <button class="BtnCT btn btn-5" id="a" onclick="addY('<%= x %>')">White</button>
+      <form action="/Square" method="POST">
+        <button class="BtnCT btn btn-5" id="e" type="submit">Exit</button>
+      </form>
+      
+    </div>
+    <div class="game">
+      <div id="main">
+    </div>
+    </div>
+    <div class = "hai" ></div>
+    <div style="clear: both"></div>	
+    <script src="javascripts/array.js">
+    </script>
+    
+  </body>
+</html>
